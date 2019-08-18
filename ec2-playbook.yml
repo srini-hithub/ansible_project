@@ -5,11 +5,11 @@
   become: true
   gather_facts: False
   vars:
-    keypair: mynewkey123 
+    keypair: mycdn 
     instance_type: t2.micro 
     #security_group: my_securitygroup
-    image: ami-0b500ef59d8335eee  
-    region: us-east-2
+    image: ami-02e60be79e78fef21 
+    region: ap-south-1 
   tasks:
     - name: Launch instance
       ec2:
@@ -19,7 +19,7 @@
          image: "{{ image }}"
          wait: true
          region: "{{ region }}"
-         vpc_subnet_id: subnet-e7cfa39d 
+         vpc_subnet_id: subnet-bd672dd5 
          assign_public_ip: yes
       register: ec2
 
