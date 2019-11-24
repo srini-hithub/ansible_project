@@ -4,11 +4,4 @@
   become: true
   tasks: 
   - name: To create users.
-    user: name=jenkin_test12 state=present
-  - group: name=mygroup state=present
-  - name: To install the httpd.
-    yum: name=httpd state=latest
-  - name: To copy the file.
-    copy: src=index.html dest=/var/www/html/
-  - name: Restart the service.
-    service: name=httpd state=restarted
+    user: name=jenkin_test12 state=present password="fcsv8FYco4WV2"
