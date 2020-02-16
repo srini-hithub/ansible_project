@@ -1,7 +1,0 @@
----
-- hosts: all
-  remote_user: root 
-  become: true
-  tasks: 
-  - name: To create users.
-    user: name=jenkin_test12 state=present
