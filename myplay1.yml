@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: To create user on the ansible client.
+    user: name=myuser123 state=present password='3uJ0ZdVGBHShg'
